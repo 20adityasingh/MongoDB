@@ -9,6 +9,8 @@ const userRouter = require("./routes/user-routes");
 
 const bookRouter = require("./routes/book-routes");
 
+app.use(express.json());
+
 dotenv.config();
 DBConnection();
 

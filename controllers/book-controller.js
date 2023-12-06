@@ -43,7 +43,7 @@ const getAllissuedBooks= async(req,res) => {
 }
 
 const addNewbook = async (req,res)=>{
-    const {data}  = req.body;
+    const { data} = req.body;
     if(!data){
         return res.status(404).send({
             message:"No DATA to be added"
